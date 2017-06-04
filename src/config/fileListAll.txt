@@ -1,0 +1,12 @@
+#第一行为注册，从第二行开始为文件清单，如果是java须包含包名（如：java:com.ecc.liana.netpay.third.base.CallBizAction），
+#biz和mvc直接写文件名(如biz:chinaPayQuickpay.biz;mvc:chinaPaylogin.mvc),
+#其他文件需要写相对路径（如：fiel:mobile2/index1.html）
+#java=com.ecc.liana.netpay.third.base.CallBizAction
+#biz=chinaPayQuickpay.biz
+#mvc=hinaPaylogin.mvc
+#file=mobile2/index1.html
+#dir=mobile2
+##################################################config start########################################################
+java=com.ecc.liana.netpay.third.action.NetPayCommonDealAction
+dir=WEB-INF/mvcs/netpay/third/chinapayPC/payment
+######################################################

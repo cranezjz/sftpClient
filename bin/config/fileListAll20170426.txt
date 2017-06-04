@@ -1,0 +1,80 @@
+#第一行为注册，从第二行开始为文件清单，如果是java须包含包名（如：java:com.ecc.liana.netpay.third.base.CallBizAction），
+#biz和mvc直接写文件名(如biz:chinaPayQuickpay.biz;mvc:chinaPaylogin.mvc),
+#其他文件需要写相对路径（如：fiel:mobile2/index1.html）
+#java=com.ecc.liana.netpay.third.base.CallBizAction
+#biz=chinaPayQuickpay.biz
+#mvc=hinaPaylogin.mvc
+#file=mobile2/index1.html
+#dir=mobile2
+##################################################config start########################################################
+####################     jar        ##############
+file=WEB-INF/lib/bcprov-jdk15on-153.jar
+file=WEB-INF/lib/commons-codec-1.5.jar
+file=WEB-INF/lib/chinapaysecure.jar
+file=WEB-INF/lib/chinapayfilesecure.jar
+####################     biz        ##############
+biz=chinaPayNoSession.biz
+biz=chinaPayQuickpay.biz
+biz=chinaPayRep.biz
+biz=chinaPayReq.biz
+biz=chinaPaySMS.biz
+biz=chinaPayUserSign.biz
+#王峰
+biz=findLogonPwd.biz
+biz=mBind.biz
+biz=mRegister.biz
+#李升
+biz=ncsscfile.biz
+biz=newasyncNotify.biz
+biz=isChinaPayChk.biz
+biz=asyncNotify.biz
+#郭莎莎
+biz=NCSUnionManage.biz
+biz=rechargeUnionManage.biz
+####################     mvc        ##############
+mvc=chinaPaylogin.mvc
+mvc=chinaPayRep.mvc
+mvc=chinaPayReq.mvc
+mvc=other.mvc
+#王峰
+mvc=mBind.mvc
+mvc=mRegister.mvc
+mvc=findPwd.mvc
+#郭莎莎
+mvc=rechargeUnionSubmit.mvc
+mvc=ncs2ReciveMessagesUnionManage.mvc
+####################     java       #############
+dir=WEB-INF/classes/com/ecc/liana/netpay/third
+java=com.ecc.liana.scheduler.cartoon.FormatCartoonFileAddQuickPay
+java=com.ecc.liana.quickpay.QPQueryChangeStatues
+java=com.ecc.liana.netpay.third.action.ChinaPayParseFileAction
+java=com.ecc.liana.netpay.html.PBJspContextServices
+java=com.ecc.liana.quickpay.SignDataTest
+##李升
+java=com.ecc.liana.scheduler.Cartoon.UpdateIColl
+java=com.ecc.liana.quickpay.GetBusiDate
+#####################   xml          ##############
+file=WEB-INF/LOAFConfig.xml
+file=WEB-INF/mvcs/netpay/empServletContext.xml
+file=WEB-INF/bizs/netpay/services.xml
+#######################李大伟###################
+#银联配置文件
+file=WEB-INF/classes/security.properties
+file=WEB-INF/classes/ezfjy.pfx
+file=WEB-INF/classes/cp.cer
+#################### jsp  js  css img#############
+file=WEB-INF/mvcs/netpay/quickpay/mobile_quickPay_step2_mobile.jsp
+file=WEB-INF/mvcs/netpay/headM.jsp
+file=images/qplogon/x_addcard.png
+file=mobile/quickpayMain.jsp
+file=errorpage/error_default.jsp
+file=errorpage/session_expire.jsp
+dir=WEB-INF/mvcs/netpay/third
+dir=mobile2
+dir=svg
+#王峰
+dir=WEB-INF/mvcs/netpay/mobile
+###############
+file=WEB-INF/classes/com/ecc/liana/netpay/html/PBJspContextServices$1PareContainer.class
+######  test file ##################
+dir=certs/
